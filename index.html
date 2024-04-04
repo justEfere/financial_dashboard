@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8dcfa659be.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <nav class="nav" id="side-bar">
+            <div class="logo">
+                <p class="logo_img">
+                    Sequence
+                </p>
+                <button class="menu_btn">
+                    <span class="material-symbols-outlined">
+                        widgets
+                    </span>
+                </button>
+            </div>
+            <div class="navigation">
+                <div class="nav_item_group">
+                    <p class="nav_title">General</p>
+                    <ul class="nav_list_item">
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/xfyxpoer.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/gjjvytyq.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                Payment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/dafdkyyt.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                Transaction
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/xuyycdjx.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                <!-- <i class="fa-regular fa-credit-card"></i> -->
+                                Cards
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav_item_group">
+                    <p class="nav_title">Support</p>
+                    <ul class="nav_list_item">
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/ncitidvz.json"
+                                    trigger="hover">
+                                </lord-icon>
+
+                                Capital
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/sbrtyqxj.json"
+                                    trigger="hover">
+                                </lord-icon>
+
+                                Vaults
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/xljvqlng.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                Reports
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/uwinmnkh.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                <!-- <i class="fa-regular fa-credit-card"></i> -->
+                                Earn
+                                <span class="add_on money">150</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app_twick">
+                <div class="app_nav">
+                    <ul class="nav_list_item">
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/ifsxxxte.json"
+                                    trigger="hover">
+                                </lord-icon>
+
+                                Setting
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/ojnjgkun.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/fnxnvref.json"
+                                    trigger="hover">
+                                </lord-icon>
+                                Pro-mode
+                                <div class="toggle_btn"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="sidebar_footer">
+                    <div class="profile">
+                        <div class="profile_img">
+                            <img class="bio_img" src="" alt="">
+                        </div>
+                        <div class="bio">
+                            <p class="bio_name"></p>
+                            <a class="email_addr" href="mailto:alaskayng@gmail.com"></a>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <p class="trade_mark">
+                        @ <span class="year"></span>
+                        <script>
+                            document.querySelector(".year").textContent = new Date().getFullYear();;
+                        </script> Sequence Inc
+                    </p>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <div class="content-area">
+            <div class="dashboard_header">
+                <button class="menu_btn fullscreen">
+                    <span class="material-symbols-outlined">
+                        widgets
+                    </span>
+                </button>
+                <div class="input_group search_area">
+
+                    <lord-icon class="mobile_icon search" src="https://cdn.lordicon.com/fkdzyfle.json" trigger="hover">
+                    </lord-icon>
+                    <input type="search" name="search" placeholder="Search" id="search">
+                    <p class="command_btn">
+                        <span class="material-symbols-outlined command_btn">
+                            keyboard_command_key
+                        </span>
+                        +F
+                    </p>
+                </div>
+
+                <!-- date group -->
+                <div class="date_group">
+                    <div class="input_group">
+                        <span class="material-symbols-outlined">
+                            calendar_month
+                        </span>
+                        <input type="date" name="date" id="date_range" value="">
+                    </div>
+                    <div class="input_group">
+                        <select name="select_range" id="range">
+                            <option value="30">Last 30 days</option>
+                            <option value="30">Last 2 Week</option>
+                            <option value="30">Last 1 Week</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="export">
+                    <span class="material-symbols-outlined">
+                        cloud_upload
+                    </span>
+                    Export
+                </button>
+            </div>
+
+
+            <div class="dashboard_main">
+                <div class="total_balance">
+                    <div class="figure">
+                        <p class="balance_title">Total Balance</p>
+                        <div class="amount">
+                            <p class="balance">320845.20</p>
+                            <!-- ₦ -->
+                            <div class="increase">
+                                15.8%
+                                <span class="material-symbols-outlined">
+                                    north_east
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn add">
+                            <span class="material-symbols-outlined">
+                                add
+                            </span>
+                            Add
+                        </button>
+                        <button class="btn send">
+                            <span class="material-symbols-outlined">
+                                arrow_upward_alt
+                            </span>
+                            Send
+                        </button>
+                        <button class="btn request">
+                            <span class="material-symbols-outlined">
+                                autorenew
+                            </span>
+                            Request
+                        </button>
+                        <button class="btn more">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- grid area -->
+                <div class="grid_area">
+                    <!-- cahsflow -->
+                    <div class="cashflow_area">
+                        <div class="grid_header">
+                            <div class="header_title">
+                                <!-- icon -->
+                                <span class="material-symbols-outlined gr">
+                                    swap_vert
+                                </span>
+                                <p class="title">Cash Flow</p>
+                            </div>
+                            <div class="button_area">
+                                <div class="rate_btn">
+                                    <p class="rate_btn_sel weekly active">Weekly</p>
+                                    <p class="rate_btn_sel daily">Daily</p>
+                                </div>
+                                <button class="manage">
+                                    <!-- icon -->
+                                    <span class="material-symbols-outlined">
+                                        settings
+                                    </span>
+                                    Manage
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <!-- bar chart -->
+                        <div class="summary">
+                            <div class="bar_graph">
+                                <div class="income_am">
+                                    <p class="in_am">₦5K</p>
+                                    <div class="top_line"></div>
+                                </div>
+                                <div class="income_am">
+                                    <p class="in_am">₦0</p>
+                                    <div class="top_line"></div>
+                                </div>
+                                <div class="bars">
+                                    <div class="income_bars">
+
+                                    </div>
+                                    <div class="expenses_bars">
+
+                                    </div>
+                                </div>
+                                <div class="expense_am">
+                                    <p class="in_am">₦3K</p>
+                                    <div class="top_line"></div>
+                                </div>
+                            </div>
+
+                            <div class="sum_area">
+                                <div class="income">
+                                    <div class="sum_icon inc">
+                                        <span class="material-symbols-outlined">
+                                            south_west
+                                        </span>
+                                    </div>
+                                    <div class="figure">
+                                        <p class="balance_title">Income</p>
+                                        <div class="amount">
+                                            <p class="balance">320845.20</p>
+                                            <div class="increase incom">
+                                                15.8%
+                                                <span class="material-symbols-outlined">
+                                                    north_east
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="expenses">
+                                    <div class="sum_icon exp">
+                                        <span class="material-symbols-outlined">
+                                            north_east
+                                        </span>
+                                    </div>
+                                    <div class="figure">
+                                        <p class="balance_title">Expenses</p>
+                                        <div class="amount">
+                                            <p class="balance">320845.20</p>
+                                            <div class="increase expense">
+                                                15.8%
+                                                <span class="material-symbols-outlined">
+                                                    south_east
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- account summary -->
+                    <div class="account_sum_container">
+
+                        <div class="account_i business_account">
+                            <div class="acco_header">
+                                <div class="acc_title">
+                                    <span class="acc_icon">
+                                        <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/jkgunhbs.json"
+                                            trigger="hover" colors="primary:#00d473">
+                                        </lord-icon>
+                                    </span>
+                                    <p>Business Account</p>
+                                </div>
+                                <p class="timeLine">Last 30 days</p>
+                            </div>
+                            <div class="accou_values">
+                                <div class="acc_amo_con">
+                                    <p class="acc_amount">8672.20</p>
+                                    <p class="perce_ch">
+                                        16.0%
+                                        <span class="material-symbols-outlined perc_ch_icon">
+                                            south_east
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="vs_last">
+                                    vs.
+                                    <span class="last_am">7120.14</span>
+                                    Last Period
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="account_i total_savings">
+                            <div class="acco_header">
+                                <div class="acc_title">
+                                    <span class="acc_icon">
+                                        <lord-icon class="mobile_icon" src="https://cdn.lordicon.com/xoaqvsym.json"
+                                            trigger="hover" colors="primary:#00d473">
+                                        </lord-icon>
+                                    </span>
+                                    <p>Total Saving</p>
+                                </div>
+                                <p class="timeLine">Last 30 days</p>
+                            </div>
+                            <div class="accou_values">
+                                <div class="acc_amo_con">
+                                    <p class="acc_amount">3765.35</p>
+                                    <p class="perce_ch">
+                                        8.2%
+                                        <span class="material-symbols-outlined perc_ch_icon">
+                                            south_east
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="vs_last">
+                                    vs.
+                                    <span class="last_am">4116.50</span>
+                                    Last Period
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="account_i tax_reserve">
+                            <div class="acco_header">
+                                <div class="acc_title">
+                                    <span class="acc_icon">
+                                        <span class="material-symbols-outlined">
+                                            package_2
+                                        </span>
+                                    </span>
+                                    <p>Tax Reserve</p>
+                                </div>
+                                <p class="timeLine">Last 30 days</p>
+                            </div>
+                            <div class="accou_values">
+                                <div class="acc_amo_con">
+                                    <p class="acc_amount">14376.16</p>
+                                    <p class="perce_ch">
+                                        32.2%%
+                                        <span class="material-symbols-outlined perc_ch_icon">
+                                            south_east
+                                        </span>
+                                    </p>
+                                </div>
+                                <p class="vs_last">
+                                    vs.
+                                    <span class="last_am">10232.46</span>
+                                    Last Period
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- activity and card -->
+                    <div class="activity_container">
+                        <div class="activity_sect">
+                            <div class="activity_header">
+                                <div class="activity_title">
+                                    <!-- icon -->
+                                    <span class="material-symbols-outlined">
+                                        vital_signs
+                                    </span>
+                                    <p class="ac_title">Recent Activity</p>
+                                </div>
+                                <div class="menus_btn">
+                                    <button class="filter">
+                                        <!-- icon -->
+                                        <span class="material-symbols-outlined">
+                                            filter_list
+                                        </span>
+                                        Filter
+                                    </button>
+                                    <button class="sort_btn">
+                                        <!-- icon -->
+                                        <span class="material-symbols-outlined gr">
+                                            swap_vert
+                                        </span>
+                                        Sort
+                                    </button>
+                                    <button class="menu_dots">
+                                        <!-- icon -->
+                                        <span class="material-symbols-outlined">
+                                            more_horiz
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="recent_avtivity_table">
+
+                                <table class="table_body">
+                                    <tr class="thead">
+                                        <thead>
+                                            <th>Type</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                            <th>Method</th>
+                                        </thead>
+                                    </tr>
+                                    <tr class="table_content">
+                                        <td class="t_type">
+
+                                            <div class="action">
+                                                <span class="material-symbols-outlined">
+                                                    arrow_upward_alt
+                                                </span>
+                                                <div>
+                                                    <p class="act_title">Theo Lawrence</p>
+                                                    <p class="act_time">Sent . Oct 18, 2024</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="t_charge">
+                                            <p class="t_am_value">500.00</p>
+                                            <p class="t_am_charge">120 USD</p>
+                                        </td>
+                                        <td class="t_status">
+                                            <button class="staus pd">pending</button>
+                                        </td>
+                                        <td class="method_cell">
+                                            <p class="t_method_name">Credit Card</p>
+                                            <div class="t_am_charge">
+                                                <span class="stars">****</span>
+                                                <p class="card_num_rem">3560</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table_content">
+                                        <td class="t_type">
+
+                                            <div class="action">
+                                                <span class="material-symbols-outlined">
+                                                    add
+                                                </span>
+                                                <div>
+                                                    <p class="act_title">Theo Lawrence</p>
+                                                    <p class="act_time">Add . Oct 18, 2024</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="t_charge">
+                                            <p class="t_am_value">500.00</p>
+                                            <p class="t_am_charge">120 USD</p>
+                                        </td>
+                                        <td class="t_status">
+                                            <button class="staus ss">success</button>
+                                        </td>
+                                        <td class="method_cell">
+                                            <p class="t_method_name">Credit Card</p>
+                                            <div class="t_am_charge">
+                                                <span class="stars">****</span>
+                                                <p class="card_num_rem">3560</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_type">
+
+                                            <div class="action">
+                                                <span class="material-symbols-outlined">
+                                                    add
+                                                </span>
+                                                <div>
+                                                    <p class="act_title">Theo Lawrence</p>
+                                                    <p class="act_time">Add . Oct 18, 2024</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="t_charge">
+                                            <p class="t_am_value">500.00</p>
+                                            <p class="t_am_charge">120 USD</p>
+                                        </td>
+                                        <td class="t_status">
+                                            <button class="staus ss">success</button>
+                                        </td>
+                                        <td class="method_cell">
+                                            <p class="t_method_name">Credit Card</p>
+                                            <div class="t_am_charge">
+                                                <span class="stars">****</span>
+                                                <p class="card_num_rem">3560</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="card_sec">
+                            <div class="card_sec_header">
+                                <div class="card_sec_title">
+                                    <!-- icon -->
+                                    <span class="material-symbols-outlined">
+                                        credit_card
+                                    </span>
+                                    <p class="ac_title">My Cards</p>
+                                </div>
+                                <button class="sort">
+                                    See All
+                                    <!-- icon -->
+                                    <span class="material-symbols-outlined">
+                                        north_east
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="cards">
+                                <div class="card_back"></div>
+                                <div class="visa">
+                                    <div class="visa_header">
+                                        <p class="visa_name">visa</p>
+                                        <div class="visa_num">
+                                            <span class="dots">****</span>
+                                            <span class="dots">****</span>
+                                            <span class="dots">****</span>
+                                            <span class="rem_num">2104</span>
+                                        </div>
+                                    </div>
+                                    <p class="visa_balance">4,540.20</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- <footer>
+        <a href="https://lordicon.com/">Icons by Lordicon.com</a>
+    </footer> -->
+
+</body>
+
+</html>
